@@ -1,4 +1,4 @@
-update=04.01.2016 19.35.06
+update=19.01.2016 21.15.06
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,9 +25,19 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=C:/Users/Frode/Desktop/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=C:/Program Files/KiCad/share/kicad/Teensy-3.1-master;Modules
+LibDir=Modules;Libraries/Teensy-3.1-master
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -60,13 +70,3 @@ LibName28=contrib
 LibName29=valves
 LibName30=C:/Program Files/KiCad/share/kicad/Teensy-3.1-master/teensy_3.1
 LibName31=FrodeLillerud
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/Frode/Desktop/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
