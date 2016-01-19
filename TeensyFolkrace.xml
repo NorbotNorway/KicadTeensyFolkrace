@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>E:/GIT/KiCad/TeensyFolkrace/TeensyFolkrace.sch</source>
+    <date>02.01.2016 00.16.44</date>
+    <tool>Eeschema 4.0.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>TeensyFolkrace.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>Teensy_3.1</value>
+      <footprint>Pin_Headers:Pin_Header_Angled_1x33</footprint>
+      <libsource lib="teensy_3.1" part="Teensy_3.1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56844D90</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_01X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56845A51</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_01X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56845ADC</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>CONN_01X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56845B15</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>220uF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5685B3AE</tstamp>
+    </comp>
+    <comp ref="B1">
+      <value>HC-05/06</value>
+      <libsource lib="TeensyFolkrace-cache" part="HC-05/06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5685C1D6</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>TMP102</value>
+      <libsource lib="FrodeLillerud" part="TMP102"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>568717C3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <description>Connector 01x03</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X03</fp>
+        <fp>Pin_Header_Angled_1X03</fp>
+        <fp>Socket_Strip_Straight_1X03</fp>
+        <fp>Socket_Strip_Angled_1X03</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TeensyFolkrace-cache" part="HC-05/06">
+      <fields>
+        <field name="Reference">B</field>
+        <field name="Value">HC-05/06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="State" type="output"/>
+        <pin num="2" name="RX" type="output"/>
+        <pin num="3" name="TX" type="output"/>
+        <pin num="4" name="GND" type="input"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="Enable" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="FrodeLillerud" part="TMP102">
+      <description>TMP102 temperature sensor.</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TMP102</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SCL" type="input"/>
+        <pin num="2" name="GND" type="power_out"/>
+        <pin num="3" name="ALERT" type="output"/>
+        <pin num="4" name="ADD0" type="input"/>
+        <pin num="5" name="V+" type="power_in"/>
+        <pin num="6" name="SDA" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="teensy_3.1" part="Teensy_3.1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Teensy_3.1</field>
+      </fields>
+      <pins>
+        <pin num="0" name="0(RX1)" type="BiDi"/>
+        <pin num="1" name="1(TX1)" type="BiDi"/>
+        <pin num="2" name="2" type="BiDi"/>
+        <pin num="3" name="3(TX)" type="BiDi"/>
+        <pin num="4" name="4(RX)" type="BiDi"/>
+        <pin num="5" name="5" type="BiDi"/>
+        <pin num="6" name="6" type="BiDi"/>
+        <pin num="7" name="7(RX3)" type="BiDi"/>
+        <pin num="8" name="8(TX3)" type="BiDi"/>
+        <pin num="9" name="9(RX2)" type="BiDi"/>
+        <pin num="10" name="10(CS)(TX2)" type="BiDi"/>
+        <pin num="11" name="11(DOUT)" type="BiDi"/>
+        <pin num="12" name="12(DIN)" type="BiDi"/>
+        <pin num="13" name="13(LED)" type="BiDi"/>
+        <pin num="14" name="14/A0" type="BiDi"/>
+        <pin num="15" name="15/A1" type="BiDi"/>
+        <pin num="16" name="16/A2" type="BiDi"/>
+        <pin num="17" name="17/A3" type="BiDi"/>
+        <pin num="18" name="18/A4" type="BiDi"/>
+        <pin num="19" name="19/A5" type="BiDi"/>
+        <pin num="20" name="20/A6" type="BiDi"/>
+        <pin num="21" name="21/A7" type="BiDi"/>
+        <pin num="22" name="22/A8" type="BiDi"/>
+        <pin num="23" name="23/A9" type="BiDi"/>
+        <pin num="24" name="3.3V" type="power_out"/>
+        <pin num="25" name="AGND" type="power_in"/>
+        <pin num="26" name="Vin" type="power_in"/>
+        <pin num="27" name="GND" type="power_in"/>
+        <pin num="28" name="A14" type="BiDi"/>
+        <pin num="29" name="Prog" type="BiDi"/>
+        <pin num="30" name="GND" type="power_in"/>
+        <pin num="31" name="3.3V" type="power_in"/>
+        <pin num="32" name="VBat" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="teensy_3.1">
+      <uri>C:\Program Files\KiCad\share\kicad\Teensy-3.1-master\teensy_3.1.lib</uri>
+    </library>
+    <library logical="FrodeLillerud">
+      <uri>E:\GIT\KiCad\TeensyFolkrace\FrodeLillerud.lib</uri>
+    </library>
+    <library logical="TeensyFolkrace-cache">
+      <uri>E:\GIT\KiCad\TeensyFolkrace\TeensyFolkrace-cache.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(B1-Pad6)">
+      <node ref="B1" pin="6"/>
+    </net>
+    <net code="2" name="BT_TX">
+      <node ref="B1" pin="3"/>
+      <node ref="U1" pin="0"/>
+    </net>
+    <net code="3" name="BT_RX">
+      <node ref="U1" pin="1"/>
+      <node ref="B1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(B1-Pad1)">
+      <node ref="B1" pin="1"/>
+    </net>
+    <net code="5" name="LED">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="6" name="+3V3">
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="7" name="GND">
+      <node ref="P3" pin="2"/>
+      <node ref="P2" pin="2"/>
+      <node ref="U1" pin="27"/>
+      <node ref="U1" pin="25"/>
+      <node ref="P1" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="B1" pin="4"/>
+    </net>
+    <net code="8" name="+5V">
+      <node ref="P1" pin="3"/>
+      <node ref="C1" pin="1"/>
+      <node ref="P2" pin="3"/>
+      <node ref="B1" pin="5"/>
+      <node ref="P3" pin="3"/>
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="9" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="10" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="11" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="12" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="13" name="Net-(U2-Pad2)">
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="14" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="15" name="Net-(U1-Pad21)">
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="16" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="19" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="20" name="Net-(U1-Pad23)">
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="21" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="22" name="Net-(U1-Pad32)">
+      <node ref="U1" pin="32"/>
+    </net>
+    <net code="23" name="Net-(U1-Pad22)">
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="24" name="Net-(U1-Pad31)">
+      <node ref="U1" pin="31"/>
+    </net>
+    <net code="25" name="SDA">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="26" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="27" name="Net-(U1-Pad30)">
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="28" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="29" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="30" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="31" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="33" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="34" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="35" name="START">
+      <node ref="P3" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="36" name="STEERING">
+      <node ref="P2" pin="1"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="37" name="MOTOR">
+      <node ref="P1" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="38" name="Net-(U1-Pad29)">
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="39" name="SCL">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="40" name="Net-(U1-Pad28)">
+      <node ref="U1" pin="28"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,53 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADXL345_Breakout
+D ADXL345 breakout board. Author: Frode Lillerud
+K adxl345 accelerometer
+F https://www.sparkfun.com/products/9836
+$ENDCMP
+#
+$CMP GP2Y0E02B
+D GP2Y0E02B I2C Sharp distance sensor. Author: Frode Lillerud
+K sensor distance
+F http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2y0e02b_e.pdf
+$ENDCMP
+#
+$CMP MIC5219-3.3YM5
+D Micrel MIC5219-3.3YM5 LDO. Author: Frode Lillerud
+K ldo voltage regulator 3.3 SOT-23-5
+F http://no.farnell.com/micrel-semiconductor/mic5219-3-3ym5-tr/ldo-0-5vdo-0-5a-3-3v-1-5sot23/dp/2219097
+$ENDCMP
+#
+$CMP MMA8452Q
+D MMA8452Q MEMS Accelerometer. Author: Frode Lillerud
+K mems accelerometer
+F http://www.farnell.com/datasheets/1933655.pdf
+$ENDCMP
+#
+$CMP TCA9548APWR
+D TCA9548APWR I2C switch. Author: Frode Lillerud
+K i2c
+F http://www.farnell.com/datasheets/1964233.pdf
+$ENDCMP
+#
+$CMP TLC5916
+D Shift register. Author: Frode Lillerud
+K led driver shift register
+F http://www.farnell.com/datasheets/1831407.pdf
+$ENDCMP
+#
+$CMP TMP102
+D TMP102 temperature sensor.
+$ENDCMP
+#
+$CMP Teensy31_32
+D Teensy 3.1/3.2 with all pins. Author: Frode Lillerud
+K teensy
+$ENDCMP
+#
+$CMP WS2812B
+D WS2812B LED. Author: Frode Lillerud
+K rgb led
+$ENDCMP
+#
+#End Doc Library
