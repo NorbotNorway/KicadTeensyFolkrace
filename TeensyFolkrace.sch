@@ -230,8 +230,8 @@ Text GLabel 6050 5700 2    60   Input ~ 0
 BT_TX
 Text Notes 4700 5100 0    60   ~ 0
 (Optional Bluetooth device. For debugging.)
-Text Notes 8500 1300 0    60   ~ 0
-5pcs Sharp IR GP2Y0E02B sensors.\nMeasures range from 4 cm to 50 cm.\nConnected to board using JST-PH 4-way connectors.\nAll sensors have same I2C address, so we use \nswitch to mux between them.
+Text Notes 8300 1300 0    60   ~ 0
+5pcs Sharp IR GP2Y0E02B sensors.\nMeasures range from 4 cm to 50 cm.\nConnected to board using JST-PH 4-way connectors. (TODO)\nAll sensors have same I2C address, so we use \nswitch to mux between them.
 $Comp
 L PWR_FLAG #FLG09
 U 1 1 568A836F
@@ -369,9 +369,9 @@ F 3 "" H 7950 4700 50  0000 C CNN
 	1    7950 4700
 	1    0    0    -1  
 $EndComp
-Text GLabel 7550 3750 0    60   Input ~ 0
+Text GLabel 7400 3750 0    60   Input ~ 0
 SCL
-Text GLabel 7550 3650 0    60   Input ~ 0
+Text GLabel 7400 3650 0    60   Input ~ 0
 SDA
 $Comp
 L GP2Y0E02B U5
@@ -595,23 +595,23 @@ Assuming that the power supplied to the \nheader is from a regulated 5V powersou
 $Comp
 L R R1
 U 1 1 568C81F6
-P 7650 3400
-F 0 "R1" V 7730 3400 50  0000 C CNN
-F 1 "R" V 7650 3400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7580 3400 50  0001 C CNN
-F 3 "" H 7650 3400 50  0000 C CNN
-	1    7650 3400
+P 7500 3400
+F 0 "R1" V 7580 3400 50  0000 C CNN
+F 1 "R" V 7500 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7430 3400 50  0001 C CNN
+F 3 "" H 7500 3400 50  0000 C CNN
+	1    7500 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R2
 U 1 1 568C8274
-P 7800 3400
-F 0 "R2" V 7880 3400 50  0000 C CNN
-F 1 "R" V 7800 3400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7730 3400 50  0001 C CNN
-F 3 "" H 7800 3400 50  0000 C CNN
-	1    7800 3400
+P 7700 3400
+F 0 "R2" V 7780 3400 50  0000 C CNN
+F 1 "R" V 7700 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7630 3400 50  0001 C CNN
+F 3 "" H 7700 3400 50  0000 C CNN
+	1    7700 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -788,15 +788,13 @@ Wire Wire Line
 	8100 4250 7950 4250
 Connection ~ 7950 4350
 Wire Wire Line
-	7550 3650 8100 3650
+	7400 3650 8100 3650
 Wire Wire Line
-	7550 3750 8100 3750
+	7400 3750 8100 3750
 Wire Wire Line
 	7950 3550 8100 3550
 Wire Wire Line
-	7950 2950 7950 3550
-Wire Wire Line
-	7650 3050 8100 3050
+	7500 3050 8100 3050
 Connection ~ 7950 3050
 Wire Wire Line
 	9550 2200 10350 2200
@@ -914,9 +912,9 @@ Wire Wire Line
 Wire Wire Line
 	9050 4450 9100 4450
 Wire Wire Line
-	9100 4450 9100 5200
+	9100 5200 9100 4450
 Wire Wire Line
-	9100 5200 8500 5200
+	8500 5200 9100 5200
 Wire Wire Line
 	1750 4300 1950 4300
 Connection ~ 1950 4300
@@ -962,16 +960,16 @@ Wire Wire Line
 Wire Wire Line
 	2350 2250 2350 2000
 Wire Wire Line
-	7800 3750 7800 3550
-Connection ~ 7800 3750
+	7700 3750 7700 3550
+Connection ~ 7700 3750
 Wire Wire Line
-	7650 3650 7650 3550
-Connection ~ 7650 3650
+	7500 3650 7500 3550
+Connection ~ 7500 3650
 Wire Wire Line
-	7800 3250 7800 3050
+	7700 3250 7700 3050
 Wire Wire Line
-	7650 3250 7650 3050
-Connection ~ 7800 3050
+	7500 3250 7500 3050
+Connection ~ 7700 3050
 Wire Wire Line
 	9200 2350 9200 2500
 Connection ~ 9200 2500
@@ -1136,4 +1134,17 @@ F 3 "" H 7950 2950 50  0000 C CNN
 	1    7950 2950
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R15
+U 1 1 569EFDAA
+P 7950 3400
+F 0 "R15" V 8030 3400 50  0000 C CNN
+F 1 "R" V 7950 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7880 3400 50  0001 C CNN
+F 3 "" H 7950 3400 50  0000 C CNN
+	1    7950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2950 7950 3250
 $EndSCHEMATC
